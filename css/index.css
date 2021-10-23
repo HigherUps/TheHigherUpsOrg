@@ -1,4 +1,3 @@
-/* css file for index.html */
 * {
 	margin: 0;
 	padding: 0;
@@ -14,7 +13,7 @@ header {
 	width: 100%;
 	height: 100px;
 	background-color: rgb(51, 51, 51);
-	overflow: auto;
+	overflow: hidden;
 }
 .inner {
 	width: 70%;
@@ -66,4 +65,4 @@ header nav .button {
  	background-color: rgb(31, 31, 31) ;
  	color: rgb(227, 238, 255);
  	filter: brightness(1.05);
- }
+}
