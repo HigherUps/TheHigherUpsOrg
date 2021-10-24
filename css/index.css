@@ -75,6 +75,79 @@ body .bg-body {
 	width: 100%;
 	height: 400px;
 	display: table;
+	background: url("https://cdn.thehigherups.org/attachments/background.jpg");
+	background-color: rgb(119, 187, 247);
+	margin-bottom: 15px;
+}
+body .bg-text {
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+	font-size: 42px;
+}
+.greet-text {
+	font-family: Impact;
+	font-size: 52px;
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+}
+.spacer {
+	width: 95%;
+	height: 1px;
+	background-color: rgba(227, 238, 255, 0.5);
+	border-radius: 2px;
+	margin: 0 auto;
+	margin-bottom: 5em;
+}
+#people {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 2.5em;
+}
+.all {
+	height: 10000px;
+	width: 60%;
+	background-color: red;
+	display: block;
+	margin: 0 auto;
+	overflow-wrap: break-word;
+}
+.thehigherups {
+	width: 100%;
+	max-width: 100%;
+	display: table;
+	background-color: blue;
+}
+.thehigherups-image {
+	display: table-cell;
+	float: left;
+}
+.thehigherups-image img {
+	display: table-cell;
+	vertical-align: middle;
+}
+.thehigherups-text {
+	display: table-cell;
+	float: left;
+	padding-left: 15em;
+	word-wrap: normal;
+	max-width: 100%;
+}
+.thehigherups-content-header {
+	font-size: 42px;
+}
+.thehigherups-content {
+	font-size: 24;
+	overflow-wrap: break-word;
+}
+
+
+/*Background Image*/
+body .bg-body {
+	width: 100%;
+	height: 400px;
+	display: table;
 	background: url("https://lh6.googleusercontent.com/_pi4e3zcxgzORe6B2v6UAwy8Vxbjk48S5OLOs6i2v25eC3CfZ2ZV-YLJCtgLu1zWgn8R2J0BCw01nMYuzTgHlQw=w16383");
 	background-color: rgb(119, 187, 247);
 	margin-bottom: 15px;
@@ -132,3 +205,31 @@ body .bg-text {
  ::-webkit-scrollbar-thumb:hover {
  	background-color: rgb(153, 153, 153);
  }
+/*** Works on common browsers ***/
+::selection {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
