@@ -70,6 +70,26 @@ header nav .button {
  	color: rgb(227, 238, 255);
  	filter: brightness(1.05);
 }
+/*Background Image*/
+body .bg-body {
+	width: 100%;
+	height: 400px;
+	display: table;
+	background: url("https://lh6.googleusercontent.com/_pi4e3zcxgzORe6B2v6UAwy8Vxbjk48S5OLOs6i2v25eC3CfZ2ZV-YLJCtgLu1zWgn8R2J0BCw01nMYuzTgHlQw=w16383");
+	background-color: rgb(119, 187, 247);
+	margin-bottom: 15px;
+}
+body .bg-text {
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+	font-size: 42px;
+}
+.greet-text {
+	font-family: Impact;
+	font-size: 52px;
+	text-align: center;
+}
 /* CUSTOM SCROLLBAR */
  /* Width */
  ::-webkit-scrollbar {
