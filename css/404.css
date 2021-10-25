@@ -48,18 +48,26 @@ div h2 {
 	margin-top: 10px;
 	font-size: 30px
 }
-.button {
-	display: block;
-	width: 300px;
-	height: 100px;
+.button-home {
+	display: table;
+	width: 150px;
+	height: 50px;
 	margin: 0 auto;
 }
-.button #button-go-home {
-	display: block;
-	background-color: black;
-	color: white;
+.button-home #button-go-home {
+	display: table-cell;
+	background-color: rgb(211, 211, 211);
+	color: rgb(31, 31, 31);
 	text-align: center;
-	margin: 0 auto;
 	vertical-align: middle;
-	border-radius: 10px;
+	border-radius: 15px;
+	height: 100%;
+	width: 100%;
+	transition: background-color 0.5s ease;
+	transition: color 0.5s ease;
+}
+.button-home #button-go-home:hover {
+	text-decoration: underline;
+	background-color: rgb(51, 51, 51);
+	color: rgb(211, 211, 211);
 }
