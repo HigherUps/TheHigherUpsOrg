@@ -48,3 +48,18 @@ div h2 {
 	margin-top: 10px;
 	font-size: 30px
 }
+.button {
+	display: block;
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+}
+.button #button-go-home {
+	display: block;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	vertical-align: middle;
+	border-radius: 10px;
+}
