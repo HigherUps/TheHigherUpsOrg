@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en-US'>
 <head>
-	<link rel="stylesheet" href="/css/index.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="icon" href="/images/icon.png" sizes="16x16">
 	<link rel="icon" href="/images/icon.png" sizes="32x32">
 	<link rel="icon" href="/images/icon.png" sizes="96x96">
@@ -14,30 +14,116 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- CHANGE COLOR OF HEADER ON SCROLL -->
+	<script>
+		$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 75) {
+            $("header").addClass("active");
+        } else {
+           $("header").removeClass("active");
+        }
+    });
+});
+	</script>
+	<!-- HIDE FOOTER WHEN NOT IN SIGHT -->
+	<script>
+		$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() < 500) {
+            $("footer").addClass("oov");
+        } else {
+           $("footer").removeClass("oov");
+        }
+    });
+});	
+	</script>
 </head>
 <body>
 	<header>
 		<div class="inner">
 			<div class="logo">
 				<div>
-					<img src="/images/logo.png" alt="TheHigherUps Logo">
+					<a href="/home">
+					<img src="images/logo.png" alt="TheHigherUps Logo" id="headerimg">
+				</a>
 				</div>
 			</div>
 			<nav>
 				<li><span><a href="/home" class="button"><b>Home</b></a></span></li>
-				<li><span>•</span></li>
+				<li><span class="dot">•</span></li>
 				<li><span><a href="/about" class="button">About</a></span></li>
-				<li><span>•</span></li>
-				<li><span><a href="/department-of-felons" class="button">Department of Felons</a></span></li>
-				<li><span>•</span></li>
+				<li><span class="dot">•</span></li>
+				<li><span ><a href="/department-of-felons" class="button">Department of Felons</a></span></li>
+				<li><span class="dot">•</span></li>
 				<li><span><a href="/products" class="button">Products</a></span></li>
-				<li><span>•</span></li>
+				<li><span class="dot">•</span></li>
 				<li><span><a href="/contact" class="button">Contact</a></span></li>
 			</nav>
 		</div>
 	</header>
-
+	<!-- Background Image -->
+	<div class="bg-body">
+		<div class="bg-text">
+			<h1>TheHigherUps</h1>
+		</div>
+	</div>
+	<!-- START REST OF BODY -->
+	<div class="body">
+		<h1 class="greet-text">We Are TheHigherUps And We Know Everything</h1>
+<div class=spacer></div>
+		<h2 id="people">Our People</h2>
+		<div class="all">
+			<div class="thehigherups">
+				<div class="thehigherups-image">
+					<img src="/images/thehigherups.png" alt="TheHigherUps">
+				</div>
+				<div class="thehigherups-text">
+					<h3 class="thehigherups-content-header">
+						TheHigherUps
+					</h3>
+					<br>
+					<p class="thehigherups-content">
+						TheHigherUps is the 'all seeing eye' and is the leader of<br> TheHigherUps. They are in charge of everything and everyone <br>in TheHigherUps. Is always watching and always knows what <br>you're doing at all times. 
+					</p>
+				</div>
+				<div class="spacer"></div>
+				<div class="thehigherups-text">
+					<h3 class="thehigherups-content-header">Department of Felons</h3>
+					<br>
+					<p class="thehigherups-content">TheHigherUps Department of Felons.</p>
+				</div>
+				<br>
+				<div class="spacer"></div>
+				<div class="thehigherups-text">
+					<h3 class="thehigherups-content-header">Tech Dept.</h3>
+					<br>
+					<p class="thehigherups-content">TheHigherUps Tech Dept. Does the shit and the other shit that we all have to do. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- BEGIN FOOTER -->
+	<div class="footer">
+	<footer>
+		<div class="footer-inner">
+			<div class="footer-text">
+				<div>
+					<pre>
+						TheHigherUps Classified
+						classified@thehigherups.org
+						<a href="https://twitter.com/TheHigherUps2_">@thehigherups2_</a>
+					</pre>
+				</div>
+				<div class="footer-logo">
+					<div>
+						<img src="images/logo2.png" alt="TheHigherUps Logo Footer">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
 </body>
-
-
 </html>
